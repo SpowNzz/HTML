@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Book Header</title>
+
+  <!-- Optional: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Crimson+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #151217;
+      --panel: #1f1a23;
+      --accent: #b79b5b;
+      --accent-soft: rgba(183, 155, 91, 0.25);
+      --text-main: #f5f0ea;
+      --text-muted: #c5b9a8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: "Crimson Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .book-header {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 32px;
+      background: radial-gradient(circle at top, #251b33 0, #151217 50%);
+      border-radius: 18px;
+      border: 1px solid var(--accent-soft);
+      box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.8),
+        0 0 0 1px rgba(0, 0, 0, 0.9);
+      position: relative;
+      text-align: center;
+    }
+
+    .book-header::before,
+    .book-header::after {
+      content: "";
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        transparent,
+        var(--accent-soft),
+        transparent
+      );
+    }
+
+    .book-header::before { top: 10px; }
+    .book-header::after { bottom: 10px; }
+
+    .eyebrow {
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Marcellus SC", serif;
+      font-size: 32px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .ornament {
+      margin: 18px auto 0;
+      font-size: 18px;
+      letter-spacing: 0.4em;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="book-header">
+    <div class="eyebrow">CHRONICLES OF THE BLACK LIBRARY</div>
+    <h1>Whispers of the Hollow Moon</h1>
+    <p class="subtitle">A dark fantasy documentation space</p>
+    <div class="ornament">◆ ✦ ◆</div>
+  </div>
+</body>
+</html>

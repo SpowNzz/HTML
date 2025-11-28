@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chapter Divider</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    .divider-wrap {
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    .line {
+      height: 1px;
+      width: 120px;
+      background: linear-gradient(to right, transparent, #5f4a2a, transparent);
+      opacity: 0.7;
+    }
+    .glyph {
+      margin: 0 16px;
+      color: #b79b5b;
+      font-size: 16px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="divider-wrap">
+    <div class="line"></div>
+    <div class="glyph">§</div>
+    <div class="line"></div>
+  </div>
+</body>
+</html>
